@@ -2,8 +2,8 @@
 
 cd ~/git/gtracker
 
-# DOW=$(date +%u)
-DOW=5
+DOW=$(date +%u)
+# DOW=5
 
 # don't work weekends
 if [ "$DOW" -gt 5 ]; then
@@ -11,12 +11,12 @@ if [ "$DOW" -gt 5 ]; then
 fi
 
 # thur
-if [ "$DOW" == 4 ]; then
+if [ "$DOW" -eq 4 ]; then
   DOW=2
 fi
 
 # fri
-if [ "$DOW" == 5 ]; then
+if [ "$DOW" -eq 5 ]; then
   DOW=1
 fi
 
