@@ -25,4 +25,4 @@ for commit in $(seq $DOW); do
   git commit -a -m 'wip'
 done
 
-git push
+# git push
